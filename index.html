@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Resaurant en ligne | E-eat</title>
+		<meta name="author" content="Tahar Sofiane">
+		<meta name="title" content="Resaurant en ligne | E-eat">
+		<meta name="description" content="E-eat, vous accueil dans son resaurant en linge.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="style/normalize.css">
+		<link rel="stylesheet" href="style/main.css">
+		<link rel="icon" href="images/images2/fav.png"/>
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<div class="nav-header">
+					<div class="menu-btn"> <!-- on cree le menu hamburger qui sera caché sur version desktop et tablette -->
+						<span></span>  <!-- 1ere ligne du burger-->
+						<span></span>  <!-- 2eme ligne du burger-->
+						<span></span>  <!-- 3eme ligne du burger-->
+					</div>
+					<div id="logo">
+						<img id="pic-logo" src="images/images2/logo-first.png" alt="pic du logo"/>
+					</div>
+					<div class="responsive-menu">
+						<ul>
+							<li><a href="index.html" >Acceuil</a></li>
+							<li><a href="connexion.php">Connexion</a></li>
+							<li><a href="compte.php">Créez un compte</a></li>
+							<li><a href="livraison.php">Livraison</a></li>
+							<li><a href="contact.php">Nous contater</a></li>
+							<li><a href="contact.php">English</a></li>
+						</ul>
+					</div>
+				</div>
+				
+			</header>
+			<main class="clear row ">
+				<div id="slogon">
+					<img id="image-amis" src="images/images2/image-header.jpg" alt="manger entre amis"/>
+					<h3>Un bon repat pour toi, partout</h3>
+				</div>
+				<div id="nous-connaitre">
+					<h3>Nous, C'est ...</h3>
+					<p>Pour nous, il ne s'agit pas seulement de vous apporter de la bonne nourriture, il s'agit d'établir une connexion, en imaginant des menus qui arriveront frais et pleins de saveur. </p>
+					<button id="connaitre">Nous connaitre plus</button>
+				</div>
+				<div id="nous-rejoindre">
+					<img id="image-rejoindre" src="images/images2/Food-Delivery.jpg" alt="rejoindre l'équipe"/>
+					<div>
+						<h3>Fais parti de la maison</h3>
+						<p>Il y a toujours de la place à notre table. Tirez un siège...</p>
+						<button id="rejoindre">Rejoinds nous</button>
+					</div>
+				</div>
+				<div id="application">
+					<h3>L'Appli</h3>
+				<p>votre repas en quelques clics, téléchargez notre application</p>
+				<img id="pic-tab-tel" src="images/images2/tabl-pc-tel.png" alt="pic tabl tel pc" />
+				<img id="pic-ios" src="images/images2/AppStore.svg.png" alt="pic Ios" />
+				<img id="pic-android" src="images/images2/gogleplay.png" alt="pic android" />
+			</div>
+		</main>
+		<footer>
+			<div id="plan">
+				<a href="plan-du-site.htlm">Plan du site</a><br>
+				<a href="politique-de-confidentialite.html" target="_blank">Politique de confidentialite</a><br>
+				<a href="https://immedia.net/it/" target="_blank">Crédit</a>
+			</div>
+			<div id="nav-rs">
+				<a id="fb" href="http://www.facebook.com" target="_blank"><img src="images/images2/facebook.png" alt="Logo de Facebook" /></a>
+				<a id="insta" href="http://www.instagram.com" target="_blank"><img src="images/images2/logo-insta.png" alt="Logo d'Instagram" /></a>
+			</div>
+			<div id="payement-footer">
+				<div class="payement">
+					<img src="images/images2/visa.png" alt="logo visa" />
+				</div>
+				<div class="payement">
+					<img src="images/images2/mastercard.png" alt="logo master card" />
+				</div>
+				<div class="payement">
+					<img src="images/images2/interac-logo.png" alt="logo interrac" />
+				</div>
+			</div>
+			<div id="copyright">
+				<span>&copy; Copyright 2017</span>
+				<span>Projet d'etude</span>
+			</div>
+		</footer>
+	</div>
+	<script type="text/javascript">
+		//menu mobile
+		jQuery(function($){
+			$( '.menu-btn' ).click(function(){
+				$('.responsive-menu').toggleClass('expand')
+			})
+		})
+	</script>
+</body>
+</html>

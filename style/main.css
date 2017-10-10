@@ -1,0 +1,565 @@
+/*main E -EAT*/
+* {
+    box-sizing: border-box;
+
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section {
+    display: block;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #efe8d8;
+    height: 100px;
+}
+
+.clear {
+    clear: both;
+}
+
+#wrapper {
+    background-color: #fff;
+    width: 100%;
+    margin: auto;
+
+}
+
+div {
+    padding: 0;
+}
+
+h1 {
+    padding-left: 15px;
+}
+
+p {
+    text-align: justify;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    float: none;
+
+}
+
+/**Logo**/
+#logo {
+    width: 10%;
+    float: left;
+    padding: 1px;
+}
+
+/**Nav**/
+.responsive-menu {
+    float: right;
+    height: 100px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+    width: 840px;
+    margin-top: 4%;
+}
+
+li {
+    background-color: #efe8d8;
+    width: 50%;
+    margin-bottom: 20px;
+
+}
+
+header a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 60px;
+    height: 60px;
+    width: 200px;
+    color: #b02923;
+    font-weight: bold;
+}
+
+header a:hover {
+    background-color: #b02923;
+    color: #fff;
+}
+
+/**footer**/
+#plan {
+    line-height: 20px;
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#plan a {
+    text-decoration: none;
+    color: #b02923;
+}
+
+footer {
+    background-color: #efe8d8;
+    height: 123px;
+    padding: 10px;
+    line-height: 50px;
+}
+
+#payement {
+    width: 3%;
+}
+
+#insta {
+    width: 3%;
+    padding-top: 4px;
+}
+
+#fb {
+    width: 3.5%;
+}
+
+#nav-rs {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+#payement-footer {
+    display: flex;
+    justify-content: flex-end;
+    width: 150px;
+    float: right;
+    margin-right: -5px;
+}
+
+.payement {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #b02923;
+}
+
+#copyright {
+    color: #b02923;
+}
+
+/** nous joindre**/
+#nous-rejoindre {
+    position: relative;
+}
+
+#nous-rejoindre div {
+    line-height: 1.5;
+    font-size: 140%;
+    width: 540px;
+    right: 50px;
+    padding: 10px;
+    position: absolute;
+    top: 160px;
+    background-color: rgba(175, 41, 34, 0.27);
+    color: #b02923;
+}
+
+#nous-rejoindre h3 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#nous-rejoindre button {
+    border: none;
+    background-color: #efe8d8;
+    text-transform: capitalize;
+    margin-left: 180px;
+    color: #b02923;
+}
+
+/**application mobile**/
+#pic-ios {
+    width: 44%;
+    position: absolute;
+    top: 50%;
+    left: 235%;
+}
+
+#application {
+    position: relative;
+    width: 500px;
+    height: 580px;
+}
+
+#application p {
+    position: absolute;
+    width: 820px;
+    font-size: 27px;
+    top: 15%;
+    left: 15%;
+    color: #b02923;
+}
+
+#application h3 {
+    position: absolute;
+    font-size: 80px;
+    margin-top: 0px;
+    color: #deb4a7;
+}
+
+#pic-tab-tel {
+    position: absolute;
+    top: 11%;
+    left: 50%;
+}
+
+#pic-android {
+    position: absolute;
+    width: 50%;
+    top: 47%;
+    left: 170%;
+}
+
+/**slogon**/
+#slogon {
+    height: 500px;
+    /* position:relative;	 */
+}
+
+#nous-connaitre {
+    height: 580px;
+    width: 500px;
+    /* position:relative; */
+}
+
+/*****************page items***********************/
+
+#page-items h3 {
+    color: #b02923;
+    display: block;
+    width: 180px;
+}
+
+img {
+    width: 100%;
+}
+
+.half {
+    margin: 5px;
+    width: 30%;
+    float: left;
+}
+
+.items {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+/*** Acordeon styles ***/
+.tab {
+    position: relative;
+    margin-bottom: 1px;
+    width: 100%;
+    color: #b02923;
+    overflow: hidden;
+}
+
+.input-cepage {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.lab-cepage {
+    position: relative;
+    display: block;
+    padding: 0 0 0 1em;
+    background: #efe8d8;
+    font-weight: bold;
+    line-height: 3;
+    cursor: pointer;
+}
+
+.tab-content {
+    max-height: 0;
+    overflow: hidden;
+    background: rgba(175, 41, 34, 0.27);
+    transition: max-height .35s;
+
+}
+
+.tab-content p {
+    margin: 1em;
+}
+
+/*** :checked ***/
+.input-cepage:checked ~ .tab-content {
+    max-height: 10em;
+}
+
+/*** Icon ***/
+.tab .lab-cepage::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3;
+    text-align: center;
+    transition: all .35s;
+}
+
+.input-cepage + .lab-cepage::after {
+    content: "+";
+}
+
+.input-cepage:checked + .lab-cepage::after {
+    transform: rotate(315deg);
+}
+
+/**items**/
+#soda {
+    height: 260px;
+}
+
+#cheesecake {
+    height: 397px;
+}
+
+#couscous {
+    height: 253px;
+}
+
+#vermicelles {
+    height: 253px;
+}
+
+#tarte {
+    height: 253px;
+}
+
+#poutine {
+    height: 253px;
+}
+
+#terrine {
+    height: 253px;
+}
+
+#soupe {
+    height: 253px;
+}
+
+#cigart {
+    height: 253px;
+}
+
+#cesar {
+    height: 253px;
+}
+
+/*on definit les classes pour chaque largeur de colonne pour la version desktop*/
+/*largeur d'une colonne pour desktop = 1/12eme*/
+.col-1 {
+    width: 8.33%;
+}
+
+/*largeur 2 colonnes 1/6*/
+.col-2 {
+    width: 16.66%;
+}
+
+/*largeur de 3 colonnes pour desktop 1/4*/
+.col-3 {
+    width: 25%;
+}
+
+/*largeur de 4 colonnes pour desktop 1/3*/
+.col-4 {
+    width: 33.33%;
+}
+
+/*largeur de 5 colonnes pour desktop */
+.col-5 {
+    width: 41.66%;
+}
+
+/*largeur de 6 colonnes pour desktop 1/2*/
+.col-6 {
+    width: 50%;
+}
+
+/*largeur de 7 colonnes pour desktop*/
+.col-7 {
+    width: 58.33%;
+}
+
+/*largeur de 8 colonnes pour desktop 2/3*/
+.col-8 {
+    width: 66.66%;
+}
+
+/*largeur de 9 colonnes pour desktop 3/4*/
+.col-9 {
+    width: 75%;
+}
+
+/*largeur de 10 colonnes pour desktop*/
+.col-10 {
+    width: 83.33%;
+}
+
+/*largeur de 11 colonnes pour desktop*/
+.col-11 {
+    width: 91.66%;
+}
+
+/*largeur de 12 colonnes pour desktop*/
+.col-12 {
+    width: 100%;
+}
+
+/*styles qui s'applique au dessous de 940px*/
+@media only screen and (max-width: 992px) {
+    .col-m-1 {
+        width: 8.33%;
+    }
+
+    /*largeur 2 colonnes 1/6*/
+    .col-m-2 {
+        width: 16.66%;
+    }
+
+    /*largeur de 3 colonnes pour tablette 1/4*/
+    .col-m-3 {
+        width: 25%;
+    }
+
+    /*largeur de 4 colonnes pour tablette 1/3*/
+    .col-m-4 {
+        width: 33.33%;
+    }
+
+    /*largeur de 5 colonnes pour tablette */
+    .col-m-5 {
+        width: 41.66%;
+    }
+
+    /*largeur de 6 colonnes pour tablette 1/2*/
+    .col-m-6 {
+        width: 50%;
+    }
+
+    /*largeur de 7 colonnes pour tablette*/
+    .col-m-7 {
+        width: 58.33%;
+    }
+
+    /*largeur de 8 colonnes pour tablette 2/3*/
+    .col-m-8 {
+        width: 66.66%;
+    }
+
+    /*largeur de 9 colonnes pour tablette 3/4*/
+    .col-m-9 {
+        width: 75%;
+    }
+
+    /*largeur de 10 colonnes pour tablette*/
+    .col-m-10 {
+        width: 83.33%;
+    }
+
+    /*largeur de 11 colonnes pour tablette
+        width: 91.66%;
+        }
+    /*largeur de 12 colonnes pour tablette*/
+    .col-m-12 {
+        width: 100%;
+    }
+
+}
+
+[class*="col-"] {
+    float: left; /*on flotte les elements qui ont un tatribut col- pour les aliigner*/
+    padding: 0 5px; /*un leger padding pour que visuellement les colonnes ne soient pas collées les unes aux autres*/
+}
+
+/*il faut lappliquer au conteneur des elements qui seront sur une meme ligne*/
+.row:after {
+    content: ""; /*on stoppe leffet de float, pour eviter que les elements suivants remontenet*/
+    clear: both;
+    display: block;
+}
+
+/*style pour mobile*/
+@media only screen and (max-width: 768px) {
+    /*cible tous les attribut class qui contient "col-" */
+    [class*="col-"] {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    html {
+        background-color: #fff;
+    }
+
+    li {
+        width: 100%;
+        margin-bottom: 0;
+        border-left: 0;
+        border-bottom: 1px solid #fff;
+    }
+
+    li:first-child {
+        border-top: 1px solid #fff;
+    }
+
+    a {
+        text-align: left;
+        padding: 5px;
+    }
+
+    /********************le menu version mobile a mettre absolument en @media 768px******************/
+    /** style du burger **/
+    .menu-btn span {
+        margin: 8px 0;
+        display: block; /** pour les placer les unes sur les autres**/
+        width: 50px;
+        height: 3px;
+        background-color: #fff;
+    }
+
+    .menu-btn {
+        height: 34px;
+        background-color: orange;
+        margin-top: 0;
+        padding-left: 10px;
+    }
+
+    /*on cache le menu par defaut*/
+    .responsive-menu {
+        display: none;
+    }
+
+    /*on cree une classe que le javascript inserera sur la nav au moment ou on clique sur le menu burger*/
+    .expand {
+        display: block !important;
+    }
+}	
