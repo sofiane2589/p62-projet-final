@@ -6,7 +6,7 @@
  * Gère les données et les variables et constantes communes
  */
  
-
+//tyyttyy
 $catalog = array(
 	25 => array(
 		'p_name' => 'Je commande',
